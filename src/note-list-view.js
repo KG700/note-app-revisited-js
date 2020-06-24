@@ -14,7 +14,6 @@
         console.log(note.getText())
         return "<li><div>" + note.getText() + "</div></li>"
       })
-      console.log(html);
       return "<ul>" + html.join("") + "</ul>";
     }
 
