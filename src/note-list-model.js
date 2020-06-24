@@ -1,8 +1,9 @@
 ((exports) => {
 
   class NoteList {
-    constructor() {
+    constructor(noteModel = Note) {
       this.notes = []
+      this.noteModel = noteModel
     }
 
     all = () => {
@@ -10,7 +11,7 @@
     }
 
     create = (text) => {
-      note = new Note(text);
+      const note = new this.noteModel(text);
       this.notes.push(note);
     }
   }
