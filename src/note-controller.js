@@ -1,11 +1,16 @@
-((window, document, undefined) => {
+((exports) => {
 
-  const onceLoaded = () => {
-    const app = document.getElementById('app');
-    console.log(app);
-    app.innerHTML = "howdy";
+  class NoteController {
+
   }
 
-window.onload = onceLoaded;
+  exports.NoteController = NoteController;
 
-})(window, document, undefined);
+})(this)
+
+// ((window, document, undefined) => {
+//   const onceLoaded = () => {
+//     const app = document.getElementById('app');
+//   }
+// window.onload = onceLoaded;
+// })(window, document, undefined);
