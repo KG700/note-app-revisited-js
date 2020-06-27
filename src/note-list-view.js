@@ -11,7 +11,7 @@
         return "";
       }
       const html = this.noteList.all().map(note => {
-        return "<li><div>" + note.getText() + "</div></li>"
+        return "<li><div>" + note.getText().slice(0,20) + "</div></li>"
       })
       return "<ul>" + html.join("") + "</ul>";
     }
